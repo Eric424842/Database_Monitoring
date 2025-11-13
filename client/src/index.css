@@ -1,0 +1,174 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light;
+  color: #213547;
+  background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: block;
+  min-width: 320px;
+  min-height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* Dark mode styles - Màu tối phù hợp */
+.dark {
+  color-scheme: dark;
+  color: #e0e0e0;
+  background-color: #1e293b; /* Slate 800 - Màu xám xanh đẹp */
+}
+
+.dark body {
+  background-color: #1e293b;
+  color: #e0e0e0;
+}
+
+.dark #root {
+  background-color: #1e293b;
+  color: #e0e0e0;
+}
+
+/* Dark mode cho các elements */
+.dark h1,
+.dark h2,
+.dark h3 {
+  color: #f1f5f9;
+}
+
+.dark p {
+  color: #cbd5e1;
+}
+
+.dark input,
+.dark select,
+.dark textarea {
+  background-color: #334155;
+  border-color: #475569;
+  color: #e0e0e0;
+}
+
+.dark input:focus,
+.dark select:focus,
+.dark textarea:focus {
+  border-color: #64748b;
+  outline-color: #64748b;
+}
+
+.dark button {
+  background-color: #334155;
+  color: #e0e0e0;
+  border-color: #475569;
+}
+
+.dark button:hover {
+  background-color: #475569;
+  border-color: #64748b;
+}
+
+/* Dark mode cho cards và containers */
+.dark [style*="border"],
+.dark [style*="backgroundColor"] {
+  /* Cards sẽ tự động nhận dark background qua inline styles được cập nhật */
+}
+
+/* Dark mode cho tables */
+.dark table {
+  color: #cbd5e1;
+}
+
+.dark th {
+  color: #f1f5f9;
+  border-bottom-color: #475569 !important;
+}
+
+.dark td {
+  color: #cbd5e1;
+  border-bottom-color: #334155 !important;
+}
+
+/* Dark mode cho code blocks */
+.dark code {
+  background-color: #1e293b;
+  color: #94a3b8;
+  border: 1px solid #334155;
+}
+
+/* Dark mode cho badges và alerts */
+.dark .badge-warning,
+.dark [style*="#fff3cd"] {
+  background-color: #78350f !important;
+  border-color: #92400e !important;
+  color: #fbbf24 !important;
+}
+
+.dark .badge-error,
+.dark [style*="#ffebee"] {
+  background-color: #7f1d1d !important;
+  border-color: #991b1b !important;
+  color: #fca5a5 !important;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
